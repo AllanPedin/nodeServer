@@ -23,7 +23,9 @@
  */
 
 	// set up ========================
-	var express  = require('express');
+    var express  = require('express');
+    
+	var argv = require('optimist').argv;
 	var app      = express(); 								// create our app w/ express
 
 	// configuration =================
@@ -35,5 +37,5 @@
 	});
 
 	// listen (start app with node server.js) ======================================
-	app.listen(8080,'35.196.11.73');
+	app.listen(8080,argv.fe_ip);
 	console.log("App listening on port 8080 @ 35.196.11.73");
