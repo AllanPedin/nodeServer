@@ -10,7 +10,7 @@ http.createServer(function (request, response) {
 
    // Send the response body "Hello World"
    response.end('Hello World\n');
-}).listen(80);
+}).listen(8000);
 
 // Print URL for accessing server
 console.log('Server running')
